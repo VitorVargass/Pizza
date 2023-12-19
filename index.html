@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Pizza del Viton</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--Modelos de pizza na lista e no carrinho-->
+    <div class="models">
+        <!--Pizza na lista-->
+        <div class="pizza-item">
+            <a href="">
+                <div class="pizza-item-img"><img src="" alt=""></div>
+                <div class="pizza-item-add">+</div>
+            </a>
+            <div class="pizza-item-price">R$ --</div>
+            <div class="pizza-item-name">--</div>
+            <div class="pizza-item-desc">--</div>
+        </div>
+        <!--Pizza no carrinho-->
+
+        <div class="cart-item">
+            <img src="" alt="">
+            <div class="cart-item-nome">--</div>
+            <div class="cart-item-qtarea">
+                <button class="cart-item-qtmenos">-</button>
+                <div class="cart-item-qt">1</div>
+                <button class="cart-item-qtmais">+</button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <h1>La Pizza del Viton</h1>
+        <div class="menu-openner"><span>0</span>🛒</div>
+    </header>
+    <!--Conteudo principal-->
+    <main>
+
+        <h2>Pizzas</h2>
+
+        <div class="pizza-area"></div>
+    </main>
+    <!--aside do carrinho-->
+    <aside>
+        <div class="cart-area">
+            <div class="menu-closer">&#10006;</div>
+            <h1>Suas Pizzas</h1>
+            <div class="cart"></div>
+            <div class="cart-details">
+                <div class="cart-total-item subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ 0,00</span>
+                </div>
+                <div class="cart-total-item desconto">
+                    <span>Desconto</span>
+                    <span>R$ 0,00</span>
+                </div>
+                <div class="cart-total-item total big">
+                    <span>Total</span>
+                    <span>R$ 0,00</span>
+                </div>
+                <div class="cart-finalizar">Finalizar a compra</div>
+            </div>
+        </div>
+    </aside>
+
+    <div class="pizza-window-area">
+        <div class="pizza-window-body">
+            <div class="pizza-info-cancelMobileButton">Voltar</div>
+            <div class="pizzaBig">
+                <img src="" alt="">
+            </div>
+            <div class="pizzaInfo">
+                <h1>--</h1>
+                <div class="pizzaInfo-desc">--</div>
+                <div class="pizzaInfo-size-area">
+                    <div class="pizzaInfo-sector">Tamanho</div>
+                    <div class="pizzaInfo-sizes">
+                        <div data-key="P" class="pizzaInfo-size">PEQUENA <span>--</span></div>
+                        <div data-key="M" class="pizzaInfo-size">MÉDIA <span>--</span></div>
+                        <div data-key="G" class="pizzaInfo-size selected">GRANDE <span>--</span></div>
+                    </div>
+                </div>
+                <div class="pizzaInfo-pricea-area">
+                    <div class="pizzaInfo-sector">Preço</div>
+                    <div class="pizzaInfo-price">
+                        <div class="pizzaInfo-actualPrice">R$ --</div>
+                        <div class="pizzaInfo-qtarea">
+                            <button class="pizzaInfo-qtmenos">-</button>
+                            <div class="pizzaInfo-qt">1</div>
+                            <button class="pizzaInfo-qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pizzaInfo-addButton">Adicionar ao carrinho</div>
+                <div class="pizzaInfo-cancelButton">Cancelar</div>
+            </div>
+        </div>
+    </div>
+    <div class="checkout">
+        <div class="checkout-body">
+            <a href="" class="voltar-buy">Voltar</a>
+            <h1>Forma de pagamento</h1>
+            <div class="checkout-img">
+            <div class="card-buy">
+                <h2>Cartão</h2>
+                <img src="images/cartao-de-credito.png" alt="">
+            </div>
+            <div class="pix-buy">
+                <h2>Pix</h2>
+                <img src="images/pix-img.png" alt="">
+            </div>
+            </div>
+            <div class="move-form">
+                <form action="" method="post">
+                    
+                    <div>
+                        <label for="">Numero do cartão</label>
+                        <input type="number" required placeholder="xxxx xxxx xxx xxx">
+                        <label for="">Nome Completo</label>
+                        <input type="text" required placeholder="Digite seu nome completo">
+                    <div class="mini-input">
+                        <p>
+                        <label for="">Data vencimento</label>
+                        <input type="date"required></p>
+                        <p>
+                        <label for="">Código de segurança</label>
+                        <input type="number" required placeholder="CVV"></p>
+                    </div>
+                        <label for="">CPF do titular dp cartão</label>
+                        <input type="number" required placeholder= "xxx.xxx.xxx-xx">
+                    </div>
+                    <input type="submit" value="Finalizar Pagamento" class="btn-final" onclick="Realizado()">
+                </form>
+            </div>
+            <div class="pix-method">
+                <h2>Escanie o QR Code abaixo:</h2>
+                <img src="images/QR-code.png" alt="" width="150px">
+                <label for="">Verifique o valor antes de realizar o pagamento</label>
+                <input type="submit" value="Finalizar Pagamento" class="btn-final" onclick="Realizado()">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/pizzas.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
